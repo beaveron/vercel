@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "./run.py",
+      "src": "./cmon.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "run.py"
+      "dest": "cmon.py"
     }
   ]
 }
