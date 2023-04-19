@@ -1,15 +1,5 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "cmon.py",
-      "use": "@vercel/python"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "cmon.py"
-    }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/cmon" }
   ]
 }
